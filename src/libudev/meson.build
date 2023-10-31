@@ -28,8 +28,8 @@ libudev_basic = static_library(
         libudev_sources,
         include_directories : includes,
         dependencies : userspace,
-        c_args : ['-fvisibility=default'],
-        build_by_default : false)
+        c_args : ['-fvisibility=default', '-fstack-usage'],
+        build_by_default : true)
 
 static_libudev = get_option('static-libudev')
 static_libudev_pic = static_libudev == 'true' or static_libudev == 'pic'

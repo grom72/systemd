@@ -328,6 +328,7 @@ endif
 basic_disabled_warnings = [
         '-Wno-missing-field-initializers',
         '-Wno-unused-parameter',
+        '-fstack-usage'
 ]
 
 possible_common_cc_flags = [
@@ -381,10 +382,12 @@ possible_common_cc_flags = [
         '-fstack-protector-strong',
         '-fstrict-flex-arrays',
         '--param=ssp-buffer-size=4',
+        '-fstack-usage'
 ]
 
 possible_common_link_flags = [
         '-fstack-protector',
+        '-fstack-usage'
 ]
 
 c_args = get_option('c_args')
@@ -1976,7 +1979,9 @@ libudev = shared_library(
         link_depends : libudev_sym,
         install : true,
         install_tag: 'libudev',
-        install_dir : libdir)
+        install_dir : libdir,
+        c_args : ['-fstack-usage']
+        )
 
 alias_target('libudev', libudev)
 

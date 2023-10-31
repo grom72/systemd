@@ -12,6 +12,10 @@
 #include "fd-util.h"
 #include "string-util.h"
 
+#ifndef _public_
+        #define _public_ static
+#endif
+
 /**
  * SECTION:libudev
  * @short_description: libudev context
