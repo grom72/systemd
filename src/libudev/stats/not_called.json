@@ -1,0 +1,7 @@
+[
+    "udev_list_entry_add",
+    "udev_device_new",
+    "udev_list_get_entry",
+    "udev_hwdb_new",
+    "udev_enumerate_new"
+]

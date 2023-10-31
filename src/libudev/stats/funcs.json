@@ -1,0 +1,510 @@
+{
+    "udev_list_entry_add": {
+        "size": "224",
+        "type": "static"
+    },
+    "udev_device_new": {
+        "size": "224",
+        "type": "static"
+    },
+    "udev_list_get_entry": {
+        "size": "160",
+        "type": "static"
+    },
+    "udev_hwdb_new": {
+        "size": "144",
+        "type": "static"
+    },
+    "udev_enumerate_new": {
+        "size": "144",
+        "type": "static"
+    },
+    "udev_monitor_new_from_netlink": {
+        "size": "112",
+        "type": "static"
+    },
+    "udev_device_new_from_subsystem_sysname": {
+        "size": "96",
+        "type": "static"
+    },
+    "udev_device_new_from_devnum": {
+        "size": "96",
+        "type": "static"
+    },
+    "udev_queue_get_fd": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_monitor_receive_device": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_hwdb_get_properties_list_entry": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_enumerate_get_list_entry": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_enumerate_add_syspath": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_device_new_from_syspath": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_device_new_from_environment": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_device_new_from_device_id": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_device_get_parent_with_subsystem_devtype": {
+        "size": "80",
+        "type": "static"
+    },
+    "udev_monitor_filter_add_match_subsystem_devtype": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_list_cleanup": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_enumerate_add_nomatch_sysattr": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_enumerate_add_match_sysattr": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_enumerate_add_match_property": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_set_sysattr_value": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_usec_since_initialized": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_syspath": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_sysnum": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_sysname": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_sysattr_value": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_subsystem": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_property_value": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_properties_list_entry": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_driver": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_devtype": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_devpath": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_devnum": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_device_get_devnode": {
+        "size": "64",
+        "type": "static"
+    },
+    "device_new_from_parent": {
+        "size": "64",
+        "type": "static"
+    },
+    "udev_util_encode_string": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_ref": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_queue_ref": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_queue_new": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_queue_get_seqnum_sequence_is_finished": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_queue_flush": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_monitor_ref": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_monitor_receive_sd_device": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_monitor_filter_add_match_tag": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_list_new": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_list_entry_free": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_hwdb_ref": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_enumerate_ref": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_enumerate_add_nomatch_subsystem": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_enumerate_add_match_tag": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_enumerate_add_match_sysname": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_enumerate_add_match_subsystem": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_enumerate_add_match_parent": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_enumerate_add_match_is_initialized": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_ref": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_get_tags_list_entry": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_get_sysattr_list_entry": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_get_seqnum": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_get_is_initialized": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_get_devlinks_list_entry": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_get_current_tags_list_entry": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_device_get_action": {
+        "size": "48",
+        "type": "static"
+    },
+    "_qsort_safe": {
+        "size": "48",
+        "type": "static"
+    },
+    "hashmap_iterate": {
+        "size": "48",
+        "type": "static"
+    },
+    "udev_unref": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_set_log_priority": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_queue_unref": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_queue_get_udev_is_active": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_queue_get_udev": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_queue_get_seqnum_is_finished": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_queue_get_queue_is_empty": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_queue_get_queued_list_entry": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_queue_free": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_new": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_unref": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_set_receive_buffer_size": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_get_udev": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_get_fd": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_free": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_filter_update": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_filter_remove": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_monitor_enable_receiving": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_list_freep": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_list_free": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_list_entry_get_by_name": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_list_entry_freep": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_list_entry_compare_func": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_hwdb_unref": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_hwdb_free": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_get_userdata": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_get_log_priority": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_enumerate_unref": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_enumerate_scan_subsystems": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_enumerate_scan_devices": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_enumerate_get_udev": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_enumerate_free": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_device_unref": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_device_has_tag": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_device_has_current_tag": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_device_get_udev": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_device_get_sd_device": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_device_get_parent": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_device_free": {
+        "size": "32",
+        "type": "static"
+    },
+    "sd_hwdb_unrefp": {
+        "size": "32",
+        "type": "static"
+    },
+    "sd_device_unrefp": {
+        "size": "32",
+        "type": "static"
+    },
+    "sd_device_monitor_unrefp": {
+        "size": "32",
+        "type": "static"
+    },
+    "sd_device_enumerator_unrefp": {
+        "size": "32",
+        "type": "static"
+    },
+    "monitor_netlink_group_from_string": {
+        "size": "32",
+        "type": "static"
+    },
+    "malloc_multiply": {
+        "size": "32",
+        "type": "static"
+    },
+    "hashmap_steal_first": {
+        "size": "32",
+        "type": "static"
+    },
+    "hashmap_size": {
+        "size": "32",
+        "type": "static"
+    },
+    "hashmap_remove": {
+        "size": "32",
+        "type": "static"
+    },
+    "hashmap_get": {
+        "size": "32",
+        "type": "static"
+    },
+    "hashmap_free": {
+        "size": "32",
+        "type": "static"
+    },
+    "hashmap_first": {
+        "size": "32",
+        "type": "static"
+    },
+    "freep": {
+        "size": "32",
+        "type": "static"
+    },
+    "closep": {
+        "size": "32",
+        "type": "static"
+    },
+    "udev_set_userdata": {
+        "size": "16",
+        "type": "static"
+    },
+    "udev_set_log_fn": {
+        "size": "16",
+        "type": "static"
+    },
+    "udev_queue_get_udev_seqnum": {
+        "size": "16",
+        "type": "static"
+    },
+    "udev_queue_get_kernel_seqnum": {
+        "size": "16",
+        "type": "static"
+    },
+    "udev_list_entry_get_value": {
+        "size": "16",
+        "type": "static"
+    },
+    "udev_list_entry_get_next": {
+        "size": "16",
+        "type": "static"
+    },
+    "udev_list_entry_get_name": {
+        "size": "16",
+        "type": "static"
+    },
+    "size_multiply_overflow": {
+        "size": "16",
+        "type": "static"
+    }
+}

@@ -1,0 +1,25 @@
+udev_new() <__attribute__ ((__visibility__ ())) struct udev *udev_new (void) at ./libudev.c:73>:
+    malloc_multiply() <__attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (1, 2))) inline void *malloc_multiply (size_t size, size_t need) at ../../src/basic/alloc-util.h:115>:
+        size_multiply_overflow() <inline _Bool size_multiply_overflow (size_t size, size_t need) at ../../src/basic/alloc-util.h:111>:
+        malloc()
+    abs()
+udev_queue_new() <__attribute__ ((__visibility__ ())) struct udev_queue *udev_queue_new (struct udev *udev) at ./libudev-queue.c:43>:
+    malloc_multiply() <__attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (1, 2))) inline void *malloc_multiply (size_t size, size_t need) at ../../src/basic/alloc-util.h:115>:
+        size_multiply_overflow() <inline _Bool size_multiply_overflow (size_t size, size_t need) at ../../src/basic/alloc-util.h:111>:
+        malloc()
+    abs()
+udev_queue_get_queue_is_empty() <__attribute__ ((__visibility__ ())) int udev_queue_get_queue_is_empty (struct udev_queue *udev_queue) at ./libudev-queue.c:144>:
+    udev_queue_is_empty() <int udev_queue_is_empty (void) at ../shared/udev-util.c:367>:
+        access()
+udev_unref() <__attribute__ ((__visibility__ ())) struct udev *udev_unref (struct udev *udev) at ./libudev.c:106>:
+    log_assert_failed()
+    typeof()
+    free()
+udev_queue_unref() <__attribute__ ((__visibility__ ())) struct udev_queue *udev_queue_unref (struct udev_queue *p) at ./libudev-queue.c:84>:
+    log_assert_failed()
+    typeof()
+    udev_queue_free() <struct udev_queue *udev_queue_free (struct udev_queue *udev_queue) at ./libudev-queue.c:59>:
+        log_assert_failed()
+        typeof()
+        safe_close()
+        free()
