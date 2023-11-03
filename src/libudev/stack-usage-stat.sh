@@ -12,8 +12,10 @@ else
 fi
 
 for build in libudev-basic.a.p; do
-	grep -v ^$ ../../build/src/libudev/$build/*.su | \
-	gawk -F "[:\t]" '{print $6 " " $5 " : " $1 ":" $2 " " $7}' | \
+#	grep -v ^$ ../../build/src/libudev/$build/*.su | \
+	grep -v ^$ `find ../../build/src/ -name *.su` | \
+#	gawk -F "[:\t]" '{print $6 " " $5 " : " $1 ":" $2 " " $7}' | \
+	gawk -F "[:\t]" '{print $6 " " $5 " " $7}' | \
 	sort -n -r > stats/stack-usage-`echo $build | sed 's/\//_/'`.txt
 done
 

@@ -31,7 +31,7 @@ libudev_basic = static_library(
         c_args : ['-fvisibility=default', '-fstack-usage'],
         build_by_default : true)
 
-static_libudev = get_option('static-libudev')
+static_libudev = get_option('static-libudev') == '' ? 'true' : 'true'
 static_libudev_pic = static_libudev == 'true' or static_libudev == 'pic'
 
 libudev_pc = custom_target(

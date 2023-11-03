@@ -1,6 +1,22 @@
 [
     {
         "stack": [
+            "udev_queue_unref",
+            "udev_queue_free",
+            "log_assert_failed"
+        ],
+        "size": 112
+    },
+    {
+        "stack": [
+            "udev_queue_unref",
+            "udev_queue_free",
+            "safe_close"
+        ],
+        "size": 112
+    },
+    {
+        "stack": [
             "udev_queue_new",
             "malloc_multiply",
             "size_multiply_overflow"
@@ -25,17 +41,23 @@
     },
     {
         "stack": [
-            "udev_new",
-            "malloc_multiply",
-            "malloc"
+            "udev_unref",
+            "log_assert_failed"
         ],
-        "size": 64
+        "size": 80
     },
     {
         "stack": [
             "udev_queue_unref",
-            "udev_queue_free",
             "log_assert_failed"
+        ],
+        "size": 80
+    },
+    {
+        "stack": [
+            "udev_new",
+            "malloc_multiply",
+            "malloc"
         ],
         "size": 64
     },
@@ -57,14 +79,6 @@
     },
     {
         "stack": [
-            "udev_queue_unref",
-            "udev_queue_free",
-            "safe_close"
-        ],
-        "size": 64
-    },
-    {
-        "stack": [
             "udev_queue_new",
             "abs"
         ],
@@ -72,30 +86,16 @@
     },
     {
         "stack": [
-            "udev_new",
-            "abs"
-        ],
-        "size": 32
-    },
-    {
-        "stack": [
             "udev_queue_get_queue_is_empty",
             "udev_queue_is_empty",
             "access"
         ],
-        "size": 32
+        "size": 48
     },
     {
         "stack": [
-            "udev_unref",
-            "log_assert_failed"
-        ],
-        "size": 32
-    },
-    {
-        "stack": [
-            "udev_queue_unref",
-            "log_assert_failed"
+            "udev_new",
+            "abs"
         ],
         "size": 32
     },
