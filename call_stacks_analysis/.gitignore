@@ -1,5 +1,5 @@
 *.err
 *.json
 *.txt
-!stack_usage.txt
+!call_stacks_filtered.json
 !white_list.json

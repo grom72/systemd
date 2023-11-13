@@ -26,7 +26,7 @@ PARSER.add_argument('-w', '--white-list', default='white_list.json')
 PARSER.add_argument('-d', '--dump', action='store_true', help='Dump debug files')
 PARSER.add_argument('-l', '--filter-lower-limit', type=int, default=0,
         help='Include only call stacks of stack usage above the limit.')
-PARSER.add_argument('-i', '--filter-api-file', default='api_filter.txt',
+PARSER.add_argument('-i', '--filter-api-file',
         help='Include only call stacks starting from API calls enumerated in the provided file.')
 PARSER.add_argument('-t', '--skip-threshold', type=int, default=0,
         help='Ignore non-reachable function if its stack usage <= threshold')

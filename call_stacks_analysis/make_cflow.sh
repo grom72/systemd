@@ -7,6 +7,8 @@
 # the cflow tool.
 #
 
+UNSAFE=$1 # '-f' to omit security checks
+
 WD=$(realpath $(dirname "$0"))
 SRC=$(realpath $WD/../src/libudev)
 
@@ -52,7 +54,7 @@ fi
 # the loop declares a variable. It doesn't care if a variable is not defined.
 # So, removing the initialization step from all the for-loops works around
 # the problem.
-# sed -i 's/for ([^;]\+;/for (;/' $SOURCES
+sed -i 's/for ([^;]\+;/for (;/' $SOURCES
 
 # Note: --symbol list has been defined based on cflow manual
 # https://www.gnu.org/software/cflow/manual/cflow.html
@@ -79,16 +81,13 @@ echo "Start"
 
 cflow -o $WD/cflow.txt \
 	--symbol __inline:=inline \
-	--symbol __inline__:=inline \
-	--symbol __const__:=const \
-	--symbol __const:=const \
-	--symbol __restrict:=restrict \
-	--symbol __extension__:qualifier \
 	--symbol __attribute__:wrapper \
 	--symbol __asm__:wrapper \
 	--symbol __nonnull:wrapper \
 	--symbol __wur:wrapper \
-	--symbol __func__:=__FUNC__ \
+	--symbol __extension__:qualifier \
+	--symbol U:qualifier \
+	--symbol assert:wrapper \
 	-I../../src/libudev -I../../src/libudev -I../../src/basic \
 	-I../../src/basic -I../../src/fundamental -I../../src/fundamental \
 	-I../../src/systemd -I../../src/systemd -I. -I.. \

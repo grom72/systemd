@@ -5,6 +5,8 @@
 #
 # Combine stack usage into a file.
 #
+# Build whole systemd with the following command:
+# `meson setup build; ninja -C build`
 
 BUILD=${1-nondebug} # debug or nondebug
 
@@ -21,9 +23,3 @@ grep -v ^$ $SU_FILES | \
 	sort -n -r > $WD/stack_usage.txt
 
 cd - > /dev/null
-
-#for build in libudev-basic.a.p; do
-#	grep -v ^$ `find ../../build/src/ -name *.su` | \
-#	gawk -F "[:\t]" '{print $6 " " $5 " " $7}' | \
-#	sort -n -r > stats/stack-usage-`echo $build | sed 's/\//_/'`.txt
-#done
