@@ -328,7 +328,6 @@ endif
 basic_disabled_warnings = [
         '-Wno-missing-field-initializers',
         '-Wno-unused-parameter',
-        '-fstack-usage'
 ]
 
 possible_common_cc_flags = [
@@ -387,7 +386,6 @@ possible_common_cc_flags = [
 
 possible_common_link_flags = [
         '-fstack-protector',
-        '-fstack-usage'
 ]
 
 c_args = get_option('c_args')
